@@ -1,0 +1,11 @@
+C:\Users\julie\StateMachineLibrary\StateMachineLib\bin\Debug\net8.0\StateMachineLib.deps.json
+C:\Users\julie\StateMachineLibrary\StateMachineLib\bin\Debug\net8.0\StateMachineLib.dll
+C:\Users\julie\StateMachineLibrary\StateMachineLib\bin\Debug\net8.0\StateMachineLib.pdb
+C:\Users\julie\StateMachineLibrary\StateMachineLib\obj\Debug\net8.0\StateMachineLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julie\StateMachineLibrary\StateMachineLib\obj\Debug\net8.0\StateMachineLib.AssemblyInfoInputs.cache
+C:\Users\julie\StateMachineLibrary\StateMachineLib\obj\Debug\net8.0\StateMachineLib.AssemblyInfo.cs
+C:\Users\julie\StateMachineLibrary\StateMachineLib\obj\Debug\net8.0\StateMachineLib.csproj.CoreCompileInputs.cache
+C:\Users\julie\StateMachineLibrary\StateMachineLib\obj\Debug\net8.0\StateMachineLib.dll
+C:\Users\julie\StateMachineLibrary\StateMachineLib\obj\Debug\net8.0\refint\StateMachineLib.dll
+C:\Users\julie\StateMachineLibrary\StateMachineLib\obj\Debug\net8.0\StateMachineLib.pdb
+C:\Users\julie\StateMachineLibrary\StateMachineLib\obj\Debug\net8.0\ref\StateMachineLib.dll

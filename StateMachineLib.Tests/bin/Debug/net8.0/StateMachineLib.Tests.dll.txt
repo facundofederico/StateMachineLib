@@ -1,0 +1,2 @@
+StateMachineLib.Tests.StateMachineTests.StateMachine_HandleValidTrigger_ShouldTransition
+StateMachineLib.Tests.StateMachineTests.StateMachine_HandleInvalidTrigger_ShouldNotTransition
