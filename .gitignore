@@ -1,0 +1,5 @@
+.vscode/
+StateMachineLib/bin/
+StateMachineLib/obj/
+StateMachineLib.Tests/bin/
+StateMachineLib.Tests/obj/
