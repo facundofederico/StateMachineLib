@@ -1,3 +1,5 @@
+using System.Reflection;
+
 namespace StateMachineLib.Domain;
 
 public class StatefulStateMachine(IState state)
@@ -16,8 +18,12 @@ public class StatefulStateMachine(IState state)
     public StatefulStateMachine Handle<T>(T trigger)
         where T : ITrigger
     {
-        var result = _stateMachine.Handle(State, trigger);
-        State = result;
+        var concreteType = State.GetType();
+        MethodInfo genericMethod = typeof(StateMachine)
+            .GetMethod(nameof(StateMachine.Handle))!
+            .MakeGenericMethod(concreteType, typeof(T));
+
+        State = (IState)genericMethod.Invoke(_stateMachine, [State, trigger])!;
         return this;
     }
 }
