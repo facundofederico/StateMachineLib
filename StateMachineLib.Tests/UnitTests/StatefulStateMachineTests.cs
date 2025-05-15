@@ -23,7 +23,7 @@ public class StatefulStateMachineTests
         stateMachine.Handle(new Advance());
         Assert.IsType<ConcreteState2>(stateMachine.State);
         Assert.Equal(1, ((ConcreteState2)stateMachine.State).Iteration);
-        
+
         stateMachine.Handle(new Advance());
         Assert.IsType<ConcreteState3>(stateMachine.State);
         Assert.Equal(2, ((ConcreteState3)stateMachine.State).Iteration);
@@ -31,7 +31,7 @@ public class StatefulStateMachineTests
         stateMachine.Handle(new Advance());
         Assert.IsType<ConcreteState3>(stateMachine.State);
         Assert.Equal(2, ((ConcreteState3)stateMachine.State).Iteration);
-        
+
         // Go Back
         stateMachine.Handle(new GoBack());
         Assert.IsType<ConcreteState2>(stateMachine.State);
@@ -40,7 +40,7 @@ public class StatefulStateMachineTests
         stateMachine.Handle(new GoBack());
         Assert.IsType<ConcreteState1>(stateMachine.State);
         Assert.Equal(4, ((ConcreteState1)stateMachine.State).Iteration);
-        
+
         stateMachine.Handle(new GoBack());
         Assert.IsType<ConcreteState1>(stateMachine.State);
         Assert.Equal(4, ((ConcreteState1)stateMachine.State).Iteration);

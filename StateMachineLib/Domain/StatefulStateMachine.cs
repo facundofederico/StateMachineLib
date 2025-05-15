@@ -15,13 +15,13 @@ public class StatefulStateMachine(IState state)
         return this;
     }
 
-    public StatefulStateMachine Handle<T>(T trigger)
-        where T : ITrigger
+    public StatefulStateMachine Handle(ITrigger trigger)
     {
-        var concreteType = State.GetType();
+        var concreteState = State.GetType();
+        var concreteTrigger = trigger.GetType();
         MethodInfo genericMethod = typeof(StateMachine)
             .GetMethod(nameof(StateMachine.Handle))!
-            .MakeGenericMethod(concreteType, typeof(T));
+            .MakeGenericMethod(concreteState, concreteTrigger);
 
         State = (IState)genericMethod.Invoke(_stateMachine, [State, trigger])!;
         return this;
