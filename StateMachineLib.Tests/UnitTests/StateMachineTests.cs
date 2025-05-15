@@ -1,6 +1,6 @@
 using StateMachineLib.Domain;
 
-namespace StateMachineLib.Tests;
+namespace StateMachineLib.Tests.UnitTests;
 
 public class StateMachineTests
 {
